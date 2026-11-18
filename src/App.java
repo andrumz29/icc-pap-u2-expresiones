@@ -37,7 +37,7 @@ private static void runejemplo3() {
     String texto = "Sensores: T001 reporta 23.5 C;\n" +
                    "S001 reporta 12 personas; T002 reporta 2 C";
 
-    Pattern patron = Pattern.compile("T[0-9]{3}");
+    Pattern patron = Pattern.compile("[TO][0-9]{3}");
     Matcher matcher = patron.matcher(texto);
 
     while (matcher.find()) {
